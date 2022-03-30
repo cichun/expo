@@ -6,9 +6,9 @@ import { text, textDark, padding, rounded } from './theme';
 
 export const Heading = create(RNText, {
   base: {
+    fontFamily: 'Inter-SemiBold',
     fontSize: 18,
     lineHeight: 20,
-    fontWeight: '600',
     color: lightTheme.text.default,
   },
 
@@ -38,7 +38,7 @@ export const Heading = create(RNText, {
 
 export const Text = create(RNText, {
   base: {
-    fontWeight: 'normal',
+    fontFamily: 'Inter-Regular',
     color: lightTheme.text.default,
     fontSize: 16,
     lineHeight: 18,
@@ -59,7 +59,7 @@ export const Text = create(RNText, {
 
 export const TextInput = create(RNTextInput, {
   base: {
-    fontWeight: 'normal',
+    fontFamily: 'Inter-Regular',
     color: lightTheme.text.default,
     fontSize: 16,
     lineHeight: 18,

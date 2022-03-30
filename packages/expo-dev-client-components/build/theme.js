@@ -79,15 +79,15 @@ export const text = {
     size: {
         small: {
             fontSize: 12,
-            lineHeight: 14,
+            lineHeight: 18,
         },
         medium: {
             fontSize: 16,
-            lineHeight: 18,
+            lineHeight: 22,
         },
         large: {
             fontSize: 18,
-            lineHeight: 24,
+            lineHeight: 26,
         },
     },
     leading: {
@@ -117,15 +117,15 @@ export const text = {
         InterThinItalic: { fontFamily: 'Inter-ThinItalic' },
     },
     weight: {
-        thin: { fontWeight: '100' },
-        extralight: { fontWeight: '200' },
-        light: { fontWeight: '300' },
-        normal: { fontWeight: '400' },
-        medium: { fontWeight: '500' },
-        semibold: { fontWeight: '600' },
-        bold: { fontWeight: '700' },
-        extrabold: { fontWeight: '800' },
-        black: { fontWeight: '900' },
+        thin: { fontFamily: 'Inter-Thin' },
+        extralight: { fontFamily: 'Inter-ExtraLight' },
+        light: { fontFamily: "Inter-Light" },
+        normal: { fontFamily: "Inter-Regular" },
+        medium: { fontFamily: "Inter-Medium" },
+        semibold: { fontFamily: "Inter-SemiBold" },
+        bold: { fontFamily: "Inter-Bold" },
+        extrabold: { fontFamily: "Inter-ExtraBold" },
+        black: { fontFamily: "Inter-Black" },
     },
     color: {
         default: { color: lightTheme.text.default },

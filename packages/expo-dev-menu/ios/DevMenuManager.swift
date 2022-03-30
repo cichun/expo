@@ -398,4 +398,42 @@ open class DevMenuManager: NSObject {
   public func getDevSettings() -> [AnyHashable: Any] {
     return EXDevMenuDevSettings.getDevSettings()
   }
+  
+  private static var fontsWereLoaded = false
+
+  
+  @objc
+  public func loadFonts() {
+    if DevMenuManager.fontsWereLoaded {
+       return
+    }
+
+    let fonts = [
+      "Inter-Black",
+      "Inter-ExtraBold",
+      "Inter-Bold",
+      "Inter-SemiBold",
+      "Inter-Medium",
+      "Inter-Regular",
+      "Inter-Light",
+      "Inter-ExtraLight",
+      "Inter-Thin"
+    ]
+    
+    for font in fonts {
+      let path = DevMenuUtils.resourcesBundle()?.path(forResource: font, ofType: "otf")
+      let data = FileManager.default.contents(atPath: path!)
+      let provider = CGDataProvider(data: data! as CFData)
+      let cgFont = CGFont(provider!)
+
+      var error: Unmanaged<CFError>?
+      //"Could not create font from loaded data for '\(font)'. '\(error.debugDescription)'."
+      if !CTFontManagerRegisterGraphicsFont(cgFont!, &error) {
+         
+      }
+    }
+
+    DevMenuManager.fontsWereLoaded = true
+    return
+  }
 }
