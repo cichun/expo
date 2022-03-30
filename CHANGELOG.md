@@ -8,7 +8,7 @@ Package-specific changes not released in any SDK will be added here just before 
 ### 📚 3rd party library updates
 
 - Removed `react-native-appearance` that is deprecated since SDK 43. Migrate to [`Appearance` API](https://reactnative.dev/docs/appearance). ([#16436](https://github.com/expo/expo/pull/16436) by [@kudo](https://github.com/kudo))
-- Updated `react-native-webview` from `11.15.0` to `11.18.0`.
+- Updated `react-native-webview` from `11.15.0` to `11.18.0`. ([#16826](https://github.com/expo/expo/pull/16826) by [@tsapeta](https://github.com/tsapeta))
 
 ### 🛠 Breaking changes
 
