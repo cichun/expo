@@ -145,11 +145,7 @@ RCT_EXPORT_METHOD(copyToClipboard:(NSString *)content
 RCT_EXPORT_METHOD(loadFontsAsync:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 {
-  
   [[DevMenuManager shared] loadFonts];
   resolve(nil);
 }
-
-
-
 @end

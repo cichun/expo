@@ -275,10 +275,10 @@ object DevMenuManager : DevMenuManagerInterface, LifecycleEventListener {
 
     val assets = applicationContext.assets
 
-      fonts.map { familyName ->
-        val font = Typeface.createFromAsset(assets, "$familyName.otf")
-        ReactFontManager.getInstance().setTypeface(familyName, Typeface.NORMAL, font)
-      }
+    fonts.map { familyName ->
+      val font = Typeface.createFromAsset(assets, "$familyName.otf")
+      ReactFontManager.getInstance().setTypeface(familyName, Typeface.NORMAL, font)
+    }
 
     fontsWereLoaded = true
   }

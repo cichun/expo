@@ -401,7 +401,6 @@ open class DevMenuManager: NSObject {
   
   private static var fontsWereLoaded = false
 
-  
   @objc
   public func loadFonts() {
     if DevMenuManager.fontsWereLoaded {
