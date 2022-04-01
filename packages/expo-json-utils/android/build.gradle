@@ -79,7 +79,7 @@ android {
   testOptions {
     unitTests.includeAndroidResources = true
   }
-  installation {
+  adbOptions {
     timeOutInMs 10000
   }
 }
