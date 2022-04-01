@@ -28,7 +28,8 @@ jobs:
     timeout-minutes: 60
     env:
       NDK_ABI_FILTERS: x86
-      ADB_TIMEOUT_IN_MS: 100000
+      ADB_INSTALL_TIMEOUT: 10
+      ADB_TIMEOUT_IN_MS: 600000
     steps:
       - name: ⬢ Setup Node
         uses: actions/setup-node@v2
