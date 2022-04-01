@@ -84,6 +84,10 @@ android {
   }
 }
 
+if (System.env.ADB_TIMEOUT_IN_MS) {
+  android.adbOptions.timeOutInMs = System.env.ADB_TIMEOUT_IN_MS as Integer
+}
+
 dependencies {
   implementation project(':expo-json-utils')
 
