@@ -79,9 +79,13 @@ android {
   testOptions {
     unitTests.includeAndroidResources = true
   }
+  adbOptions {
+    timeOutInMs 100000
+  }
 }
 
 if (System.env.ADB_TIMEOUT_IN_MS) {
+  println "ooxx"
   android.adbOptions.timeOutInMs = System.env.ADB_TIMEOUT_IN_MS as Integer
 }
 
